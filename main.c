@@ -21,8 +21,33 @@ Adicionar o contato com id igual ao idx da lista
 }
 
 int removeContato(contato c, contato* lista){
+
+/*
+TODO
+Remover o contato igual ao que foi passado na chamada da funcao
+*/
+
+
+
+}
+
+int alterarContato(contato contatoAntigo, contato contatoNovo, contato* lista){
+
+
+/*
+TODO
+Substituir o contatoAntigo pelo contatoNovo na lista
+*/
+
+
+
+}
+
+int procurarContato(contato c, contato* lista){
     
 }
+
+
 
 int main(){
 
