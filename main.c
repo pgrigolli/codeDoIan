@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <strings.h>
 
 struct Contato
 {
@@ -9,6 +10,17 @@ struct Contato
 };
 
 typedef struct Contato contato;
+
+contato criarContato(char name, char telefone, char email){
+
+    struct Contato c1;
+    strcpy(c1.nome, name);    
+    strcpy(c1.telefone, telefone);    
+    strcpy(c1.email, email);
+
+    return c1;    
+
+}
 
 int addContato(contato c, contato* lista){
 
@@ -45,6 +57,14 @@ Substituir o contatoAntigo pelo contatoNovo na lista
 
 int procurarContato(contato c, contato* lista){
     
+
+/*
+TODO
+Procurar o contato dentro da lista pelo id
+*/
+
+
+
 }
 
 
