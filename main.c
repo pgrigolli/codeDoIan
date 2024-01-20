@@ -34,11 +34,13 @@ int removeContato(contato c, contato* lista){
 
     int len = sizeof(lista)/sizeof(lista[0]);
 
-    for(int i = 0; i , len; i++){
+    int i = 0;
+
+    for(int i = 0; i < len; i++){
         if(lista[i].id == c.id){
-
-            
-
+            for(int i = 0; i < len - 1; i++){
+                lista[i] = lista[i + 1];
+            }
 
         }
     }
