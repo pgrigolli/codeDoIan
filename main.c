@@ -11,9 +11,10 @@ struct Contato
 
 typedef struct Contato contato;
 
-contato criarContato(char name, char telefone, char email){
+contato criarContato(int id, char name, char telefone, char email){
 
     struct Contato c1;
+    c1.id = id;
     strcpy(c1.nome, name);    
     strcpy(c1.telefone, telefone);    
     strcpy(c1.email, email);
@@ -24,21 +25,23 @@ contato criarContato(char name, char telefone, char email){
 
 int addContato(contato c, contato* lista){
 
-
-/*
-TODO
-Adicionar o contato com id igual ao idx da lista
-*/
+    *lista = c;
+    lista++;
 
 }
 
-int removeContato(contato c, contato* lista){
+int removeContato(contato c, contato* lista){ 
 
-/*
-TODO
-Remover o contato igual ao que foi passado na chamada da funcao
-*/
+    int len = sizeof(lista)/sizeof(lista[0]);
 
+    for(int i = 0; i , len; i++){
+        if(lista[i].id == c.id){
+
+            
+
+
+        }
+    }
 
 
 }
